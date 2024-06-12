@@ -11,6 +11,7 @@
 - Lab 8
 - Lab 9
 - Lab 10
+- Updated
 
 
 ## …or create a new repository on the command line
