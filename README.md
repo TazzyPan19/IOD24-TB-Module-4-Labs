@@ -1,9 +1,8 @@
 ## IOD24 Module 4: Lab Works
 
-- Mini Project
 - Lab 1 Figma
 - Lab 2 Templates
-- Lab 3 Calculators
+- Lab 3 Calculator
 - Lab 4 Bootscrap
 - Lab 5 Manage Data
 - Lab 6 Fetch Data
@@ -14,7 +13,7 @@
 
 ## …or create a new repository on the command line
 
-    echo "# IOD24-TB-Module-4-Labs" >> README.md git init
+    echo "# {repository-name}" >> README.md git init
     git add README.md
     git commit -m "first commit"
     git branch -M main
