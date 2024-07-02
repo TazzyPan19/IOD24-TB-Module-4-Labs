@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+    <head lang="en-AU">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">    
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+            <title> Lab 3 - Calculator Application </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <main>
+            <header class="main">
+                <div style="padding: 40px;">
+                    <h1 style="display: flex; justify-content: center;">Calculator Application</h1>
+                    <p style="display: flex; justify-content: center;">
+                        A simple scienttific calculator with 4 operations.
+                    </p>
+                </div>
+            </header>
+            <section class="main2">
+                
+                    <div class="grid-container">
+                        <div class="grid-component-1">
+                            <input id="display-nums" class="input-decor" type="text" maxlength="30" readonly>
+                        </div>
+                        <div class="grid-component">
+                            <button id="plus-op" onclick="addToOutput('+')" class="button-decor">+</button>
+                        </div>  
+                        <div class="grid-component">
+                            <button id="minus-op" onclick="addToOutput('-')" class="button-decor">-</button>
+                        </div>  
+                        <div class="grid-component">
+                            <button id="divide-op" onclick="addToOutput('*')" class="button-decor">*</button>
+                        </div>  
+                        <div class="grid-component">
+                            <button id="multiple-op" onclick="addToOutput('/')" class="button-decor">/</button>
+                        </div>    
+                        <div class="grid-component">
+                            <button onclick="addToOutput('1')" class="button-decor">1</button>
+                        </div>
+                        <div class="grid-component">
+                            <button onclick="addToOutput('2')" class="button-decor">2</button>
+                        </div>
+                        <div class="grid-component">
+                            <button onclick="addToOutput('3')" class="button-decor">3</button>
+                        </div>  
+                        <div class="grid-component-3">
+                            <button onclick="calculate()" class="button-decor">Enter</button>
+                        </div> 
+                        <div class="grid-component">
+                            <button onclick="addToOutput('4')" class="button-decor">4</button>
+                        </div>
+                        <div class="grid-component">
+                            <button onclick="addToOutput('5')" class="button-decor">5</button>
+                        </div>
+                        <div class="grid-component">
+                            <button onclick="addToOutput('6')" class="button-decor">6</button>
+                        </div>  
+                        <div class="grid-component-4">
+                            <button onclick="clearReset()" class="button-decor">Reset</button>
+                        </div>  
+                        <div class="grid-component">
+                            <button onclick="addToOutput('7')" class="button-decor">7</button>
+                        </div>
+                        <div class="grid-component">
+                            <button onclick="addToOutput('8')" class="button-decor">8</button>
+                        </div>
+                        <div class="grid-component">
+                            <button onclick="addToOutput('9')" class="button-decor">9</button>
+                        </div>  
+                        <div class="grid-component-2">
+                            <button onclick="addToOutput('0')" class="button-decor">0</button>
+                        </div>
+                    </div>
+               
+            </section>
+        </main>
+        <script src="script.js" rel="text/javascript">
+        </script>
+    </body>
+
+</html>

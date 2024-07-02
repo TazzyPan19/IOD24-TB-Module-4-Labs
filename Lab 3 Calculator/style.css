@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.main {
+    background-color: #7fffd4;
+    width: 60%;
+    height: 400px;
+    margin: auto;
+}
+
+.main2 {
+    background-color: #d0ff7f;
+    width: 60%;
+    height: 500px;
+    margin: auto;
+}
+
+.button-decor {
+    font-family: "Bebas Neue", sans-serif;
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+    padding: 20px 20px;
+    width: 100%;
+    font-size: 26px;
+    background-color: white;
+    /* background-color: black;
+    color: white; */
+}
+
+.input-decor {
+    font-family: "Bebas Neue", sans-serif;
+    text-decoration: none;
+    border: none;
+    /* padding: 20px 0px 20px 0px; */
+    padding: 20px;
+    font-size: 26px;
+    /* background-color: black;
+    color: white; */
+    text-align: right;
+    float: right;
+    width: 80%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    /* grid-template-rows: auto auto auto auto auto auto; */
+    /* background-color: #2196F3; */
+    width: 100%;
+    margin: auto;
+    gap: 4px;
+  }
+
+.grid-component {
+    background-color: rgba(255, 255, 255, 0.8);
+    /* border: 1px solid rgba(0, 0, 0, 0.8); */
+    /* padding: 20px; */
+    font-size: 26px;
+    text-align: center;
+    border:  solid 2px #4f4f4f;
+}
+
+.grid-component-1 {
+    background-color: rgba(255, 255, 255, 0.8);
+    /* width: 100%; */
+    /* padding: 20px; */
+    /* font-size: 26px; */
+    /* text-align: center; */
+    grid-column-start: 1;
+    grid-column-end: 5;
+    border:  solid 2px #4f4f4f;
+}
+
+.grid-component-2 {
+    background-color: rgba(255, 255, 255, 0.8);
+    /* padding: 20px; */
+    font-size: 26px;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    border:  solid 2px #4f4f4f;
+}
+
+.grid-component-3 {
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    /* background-color: #000000; */
+     background-color: #ffffff;
+    /* padding: 20px; */
+    font-size: 26px;
+    text-align: center;
+    align-content: center;
+    grid-column: 4;
+    grid-row: 3 / span 2;
+    border:  solid 2px #4f4f4f;
+}
+
+.grid-component-4 {
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    /* background-color: #000000; */
+     background-color: #ffffff;
+    /* padding: 20px; */
+    font-size: 26px;
+    text-align: center;
+    align-content: center;
+    grid-column: 4;
+    grid-row: 5 / span 2;
+    border:  solid 2px #4f4f4f;
+}
+
+img {
+    image-rendering: pixelated;
+    height: auto;
+    width: 100%;
+}
+
+input {
+    box-sizing: border-box;
+}

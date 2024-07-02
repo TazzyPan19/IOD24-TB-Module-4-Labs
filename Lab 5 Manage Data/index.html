@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en-AU">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">    
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+            <title> Lab 5 - Manage Data</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            .padding {
+                padding: 2em 0em 2em 0em;
+            }
+            .padding-2 {
+                padding: 0em 1.5em 0em 0em;
+                display: flex;
+                /* flex-direction: column; */
+            }
+        </style>
+    </head>
+    <body>
+        <template id="news-template">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card news-card">
+                    <div class="card-body news-body">
+                        <div class="card-text news-title"></div>
+                        <div class="card-text news-content"></div>
+                    </div>
+                </div>
+            </div>
+        </template>
+        <div class="container p-4">
+            <div id="news-display" class="row g-3"></div>
+            <div class="padding">
+                <button onclick="stopReloadingFeed()">Stop Reloading</button>
+            </div>
+            <form onsubmit="createNewsItem(event)" id="submit-new-data" action="">
+                <div class="padding-2">
+                    <div>
+                        <label for="">News Item Title: </label><br>
+                        <label for="">News Item Content:</label>
+                    </div>
+                    <div>
+                        <input id="addNewsTitle" name="title" type="text"><br>
+                        <input id="addNewsContent" name="content" type="text">
+                    </div>
+                </div>
+                <div class="padding">
+                    <button>Add News Article</button>   
+                </div>
+            </form>
+        </div>
+        <script src="script.js" rel="text/javascript"></script>
+    </body>
+</html>

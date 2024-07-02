@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+    <head lang="en-AU">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">    
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+            <title>Lab 7 - CSS Animations </title>
+        <link rel="stylesheet" href="html.css">
+    </head>
+
+    <body >  
+        <h1>Lab 7 - CSS Animations</h1>
+        <div class="center-align">
+           
+            <div class="animation-wrapper ">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+        </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                var circles = document.querySelectorAll(".circle");
+                for (var i = 0; i < circles.length; i++) {
+                    console.log(circles);
+                circles[i].style.left = i * 30 + "px";
+                circles[i].style.animationDelay = i * 0.1 + "s";
+                }
+            });
+        </script>
+    </body>
+</html>

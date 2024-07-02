@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lab 2 - Card List</title>
+    <script type="text/javascript" src="main.js"></script>
+    <style>
+      body {
+        font-family: 'Arial', Arial, sans-serif;
+        background-color: #e3f2fd;
+      }
+      .flex-container {
+        display: flex;
+        justify-content: center;
+      }
+      .card {
+        display: flex;
+        justify-content: center;
+        background-color: #ffffff;
+        width: 600px;
+        padding: 30px;
+        margin: 20px 0px 20px 0px;
+        border: #473541 solid 4px;
+      }
+      .card-title {
+        font-weight: 600;
+        font-size: 3em;
+        padding: 0 0 10px 0;
+        color: #473541;
+      }
+      .card-description {
+        font-weight: 400;
+        font-size: 2em;
+      }
+      .buttons-container {
+        height: 100%;
+        margin: 20px 20px 20px 20px;
+      }
+      .buttons-style {
+        font-family: 'Arial', Arial, sans-serif;
+        font-weight: 600;
+        font-size: 1em;
+        background-color: #be8ea8;
+        padding: 20px;
+        margin: 0px 10px 0px 10px;
+        color: #473541;
+        border: none;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <template id="card-template-one">
+      <div class="card">
+        <div class="card-body">
+          <div class="card-title"></div>
+          <div class="card-text"></div>
+        </div>
+      </div>
+    </template>
+    <div class="flex-container">
+      <div class="buttons-container">
+        <button class="buttons-style" onclick="addCard();">Add New Card</button>
+        <button class="buttons-style" onclick="cardRemoveAll();">Reset All</button>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div id="card-list"></div>
+    </div>
+    <script type="text/javascript">
+      function cardRemoveAll() { 
+        document.getElementById("card-list").innerText = '';
+        console.log('All Content Removed!');
+      }
+    </script>
+  </body>
+</html>
